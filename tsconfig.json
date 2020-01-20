@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "mri-ngx-rating-stars": [
+        "dist/mri-ngx-rating-stars"
+      ],
+      "mri-ngx-rating-stars/*": [
+        "dist/mri-ngx-rating-stars/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

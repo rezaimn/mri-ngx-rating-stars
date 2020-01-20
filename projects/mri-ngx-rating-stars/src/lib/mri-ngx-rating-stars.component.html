@@ -1,0 +1,66 @@
+<div   class="rate"  [ngStyle]="{'height':fontSize}" >
+  <input
+    [checked]="rate>4"
+    [disabled]="disabled"
+    [value]="'5'"
+    name="rate"
+    type="radio"
+  />
+  <label
+    (click)="setRate(5)"
+    [style.color]="rate>4 ? activeColor:'#ccc'"
+    [ngStyle]="{'font-size':fontSize}"
+  ></label>
+  <input
+    [checked]="rate>3"
+    [disabled]="disabled"
+    [value]="'4'"
+    name="rate"
+    type="radio"
+  />
+  <label
+    (click)="setRate(4)"
+    [style.color]="rate>3 ? activeColor:'#ccc'"
+    [ngStyle]="{'font-size':fontSize}"
+  ></label>
+  <input
+    [checked]="rate>2"
+    [disabled]="disabled"
+    [value]="'3'"
+    name="rate"
+    type="radio"
+  />
+  <label
+    (click)="setRate(3)"
+    [style.color]="rate>2 ? activeColor:'#ccc'"
+    [ngStyle]="{'font-size':fontSize}"
+  ></label>
+  <input
+    [checked]="rate>1"
+    [disabled]="disabled"
+    [value]="'2'"
+    name="rate"
+    type="radio"
+  />
+  <label
+    (click)="setRate(2)"
+    [style.color]="rate>1 ? activeColor:'#ccc'"
+    [ngStyle]="{'font-size':fontSize}"
+  ></label>
+  <input
+    [checked]="rate>0"
+    [disabled]="disabled"
+    [value]="'1'"
+    name="rate"
+    type="radio"
+  />
+  <label
+    (click)="setRate(1)"
+    [style.color]="rate>0 ? activeColor:'#ccc'"
+    [ngStyle]="{'font-size':fontSize}"
+  ></label>
+  <label
+    (click)="setRate(0)"
+    [ngStyle]="{'font-size':fontSize,'color':'transparent'}"
+  ></label>
+</div>

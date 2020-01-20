@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "mri-ngx-rating-stars": {
+      "projectType": "library",
+      "root": "projects/mri-ngx-rating-stars",
+      "sourceRoot": "projects/mri-ngx-rating-stars/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/mri-ngx-rating-stars/tsconfig.lib.json",
+            "project": "projects/mri-ngx-rating-stars/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mri-ngx-rating-stars/src/test.ts",
+            "tsConfig": "projects/mri-ngx-rating-stars/tsconfig.spec.json",
+            "karmaConfig": "projects/mri-ngx-rating-stars/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mri-ngx-rating-stars/tsconfig.lib.json",
+              "projects/mri-ngx-rating-stars/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "mri-ngx-rating-stars-app"
 }

@@ -4,11 +4,6 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 This library src is available on [GitHub](https://github.com/rezaimn/mri-ngx-rating-stars).
 
-![alt text](green.png)
-![alt text](orange.png)
-![alt text](red.png)
-
-
 ## Installing
 
      npm i mri-ngx-rating-stars --save
@@ -41,7 +36,7 @@ Import mri-ngx-rating-stars module in Angular app.
 ```
 
 ##Guide
-
+###Inputs
 | input | type | description |
 | ------ | ------ | ------ |
 | fontSize | string | it sets the stars size
@@ -49,6 +44,7 @@ Import mri-ngx-rating-stars module in Angular app.
 | activeColor | string | it sets the activated stars color
 | disabled | boolean | it allows you to change the rating by click on the stars if sets to true
 
+###Outputs
 | output | type | description |
 | ------ | ------ | ------ |
 | rateSet | number | it returns the star number you clicked to set ( 0 - 5 ).to set the 0 rating there is a transparent star provided on the left side of the first star and you can click on that.
